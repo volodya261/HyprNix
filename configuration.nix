@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, hostname, stateVersion, ... }:
+{  pkgs, hostname, stateVersion, ... }:
 
 {
   imports =
@@ -45,7 +45,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.ultra = {
      isNormalUser = true;
-     extraGroups = [ "wheel" "input" "networkmanager" ]; # Enable ‘sudo’ for the user.
+     extraGroups = [ "wheel" "input" "networkmanager" "libvirtd"]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
 	vim
 	git
@@ -53,15 +53,16 @@
    };
 
   programs.firefox.enable = true;
+  # usb automount
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
    environment.systemPackages = with pkgs; [
-     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-     gnome-boxes
-     virt-manager
-     libvirt
+     vim 
      home-manager
+     openconnect
      wget
    ];
 

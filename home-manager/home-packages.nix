@@ -12,14 +12,16 @@
     telegram-desktop
     xfce.thunar
     kitty
+    networkmanagerapplet
     # CLI utils
+    blueman
+    yandex-disk
     brightnessctl
     cliphist
     htop
     ntfs3g
-    microfetch
-    ueberzugpp
     unzip
+    fastfetch
     w3m
     wget
     wl-clipboard
@@ -31,7 +33,25 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     waybar
+    hyprlock
+    hyprpaper
+    wlogout
+    cliphist
+    polkit_gnome
+    parallel
+    imagemagick
+    libnotify
+    ## scrinshot
+    satty
+    slurp
+    grim
+    # Theme
+    nwg-look
+    hypridle
+    qadwaitadecorations-qt6
+    qadwaitadecorations
     # Other
     nix-prefetch-scripts
+    dunst
   ];
 }
