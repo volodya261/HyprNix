@@ -53,9 +53,10 @@
    };
 
   programs.firefox.enable = true;
-  # usb automount
-  services.gvfs.enable = true;
+  
+# usb automount
   services.udisks2.enable = true;
+  nixpkgs.config.allowUnfree = true; 
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

@@ -10,7 +10,6 @@
     obsidian
     pavucontrol
     telegram-desktop
-    xfce.thunar
     kitty
     networkmanagerapplet
     # CLI utils

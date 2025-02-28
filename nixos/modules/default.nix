@@ -6,5 +6,8 @@
     ./kernel.nix
     ./nix.nix
     ./virt.nix
+    ./steam.nix
+    ./flatpak.nix
+    ./thunar.nix
   ];
 }
