@@ -32,7 +32,7 @@
       };
 
       modules = [
-        ./configuration.nix
+        ./hosts/${hostname}/configuration.nix
       ];
     };
 
