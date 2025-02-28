@@ -30,7 +30,7 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-
+    waybar
     # Other
     nix-prefetch-scripts
   ];
