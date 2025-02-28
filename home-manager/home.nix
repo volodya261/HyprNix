@@ -1,8 +1,10 @@
 { homeStateVersion, user, ... }: {
+  
   imports = [
     ./modules
     ./home-packages.nix
   ];
+
 
   home = {
     username = user;
@@ -15,6 +17,7 @@
     autoconnect = ["qemu:///system"];
     uris = ["qemu:///system"];
   };
-};
+
+  };
 
 }
