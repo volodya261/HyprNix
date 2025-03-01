@@ -14,7 +14,7 @@ programs.kitty = lib.mkForce {
     background_opacity = "0.9";
     background_blur = 6;
 
-   # include = "~/.config/kitty/theme.conf";
+  # include = "~/.config/kitty/theme.conf";
   };
 };
 

@@ -1,92 +1,110 @@
-{
+{ pkgs, ...}:
+
+let
+
+  screenshot = pkgs.writeShellScript "screenshot" ''
+   #!/bin/sh
+
+   temp_screenshot="/tmp/screenshot.png"
+   save_file=$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')
+
+   grim -g "$(slurp)" - | wl-copy && wl-paste > $temp_screenshot | dunstify "Screenshot of the region taken" -t 1000 && satty -f $temp_screenshot
+
+   rm "$temp_screenshot"
+  '';
+
+in {
+
   wayland.windowManager.hyprland.settings = {
-    bind = [
-      "$mainMod SHIFT, Return, exec, $terminal"
-      "$mainMod SHIFT, C, killactive,"
-      "$mainMod SHIFT, Q, exit,"
-      "$mainMod,       R, exec, $fileManager"
-      "$mainMod,       F, togglefloating,"
-      "$mainMod,       D, exec, $menu --show drun"
-      "$mainMod,       P, pin,"
-      "$mainMod,       J, togglesplit,"
-      "$mainMod,       E, exec, bemoji -cn"
-      "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
-      "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
-      "$mainMod SHIFT, B, exec, pkill -SIGUSR1 waybar"
-      "$mainMod,       L, exec, loginctl lock-session"
-      "$mainMod,       P, exec, hyprpicker -an"
-      "$mainMod,       N, exec, swaync-client -t"
-      ", Print, exec, grimblast --notify --freeze copysave area"
 
-      # Moving focus
-      "$mainMod, left, movefocus, l"
-      "$mainMod, right, movefocus, r"
-      "$mainMod, up, movefocus, u"
-      "$mainMod, down, movefocus, d"
+bind = [ 
+"$mainMod, P, exec, ${screenshot}"
+"Alt, T, exec, telegram-desktop"
+"$mainMod, N, exec, nekoray"
+"Alt, O, exec, obsidian"
+"Alt, S, exec, steam"
+"$mainMod, Delete, exit, "
+"$mainMod, W, togglefloating, "
+"$mainMod, G, togglegroup, "
+"Alt, Return, fullscreen, "
+"$mainMod, L, exec, hyprlock "
+"$mainMod, Q, killactive,"
+"$mainMod, Return, exec, $terminal"
+"$mainMod, E, exec, $file"
+"$mainMod, F, exec, firefox"
+"$mainMod, A, exec, rofi -show drun"
+"$mainMod CTRL , H, changegroupactive, b"
+"$mainMod CTRL , L, changegroupactive, f"
+"$mainMod, Left, movefocus, l"
+"$mainMod, Right, movefocus, r"
+"$mainMod, Up, movefocus, u"
+"$mainMod, Down, movefocus, d"
+"Alt, Tab, movefocus, d"
+"Alt, H, movefocus, l"
+"Alt, L, movefocus, r"
+"Alt, K, movefocus, u"
+"Alt, J, movefocus, d"
+"$mainMod, 1, workspace, 1"
+"$mainMod, KP_End, workspace, 1"
+"$mainMod, 2, workspace, 2"
+"$mainMod, KP_Down, workspace, 2"
+"$mainMod, 3, workspace, 3"
+"$mainMod, KP_Next, workspace, 3"
+"$mainMod, 4, workspace, 4"
+"$mainMod, KP_Left, workspace, 4"
+"$mainMod, 5, workspace, 5"
+"$mainMod, KP_Begin, workspace, 5"
+"$mainMod, 6, workspace, 6"
+"$mainMod, KP_Right, workspace, 6"
+"$mainMod, 7, workspace, 7"
+"$mainMod, KP_Home, workspace, 7"
+"$mainMod, 8, workspace, 8"
+"$mainMod, KP_Up, workspace, 8"
+"$mainMod, 9, workspace, 9"
+"$mainMod, 0, workspace, 10"
+"$mainMod+Ctrl, Right, workspace, r+1"
+"$mainMod+Ctrl, Left, workspace, r-1"
+"$mainMod+Ctrl, Down, workspace, empty "
+"$mainMod, mouse_down, workspace, e+1"
+"$mainMod, mouse_up, workspace, e-1"
+"$mainMod+Alt, S, movetoworkspacesilent, special"
+"$mainMod, S, togglespecialworkspace,"
+"$mainMod, J, togglesplit"
+"$mainMod, K, pseudo,"
+"$mainMod+Shift, 1, movetoworkspace, 1"
+"$mainMod+Shift, 2, movetoworkspace, 2"
+"$mainMod+Shift, 3, movetoworkspace, 3"
+"$mainMod+Shift, 4, movetoworkspace, 4"
+"$mainMod+Shift, 5, movetoworkspace, 5"
+"$mainMod+Shift, 6, movetoworkspace, 6"
+"$mainMod+Shift, 7, movetoworkspace, 7"
+"$mainMod+Shift, 8, movetoworkspace, 8"
+"$mainMod+Shift, 9, movetoworkspace, 9"
+"$mainMod+Shift, 0, movetoworkspace, 10"
+];
 
-      # Moving windows
-      "$mainMod SHIFT, left,  swapwindow, l"
-      "$mainMod SHIFT, right, swapwindow, r"
-      "$mainMod SHIFT, up,    swapwindow, u"
-      "$mainMod SHIFT, down,  swapwindow, d"
+bindel = [ 
+",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
+",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+];
 
-      # Resizeing windows                   X  Y
-      "$mainMod CTRL, left,  resizeactive, -60 0"
-      "$mainMod CTRL, right, resizeactive,  60 0"
-      "$mainMod CTRL, up,    resizeactive,  0 -60"
-      "$mainMod CTRL, down,  resizeactive,  0  60"
+bindm = [ 
+"$mainMod, mouse:272, movewindow"
+"$mainMod, mouse:273, resizewindow"
+];
 
-      # Switching workspaces
-      "$mainMod, 1, workspace, 1"
-      "$mainMod, 2, workspace, 2"
-      "$mainMod, 3, workspace, 3"
-      "$mainMod, 4, workspace, 4"
-      "$mainMod, 5, workspace, 5"
-      "$mainMod, 6, workspace, 6"
-      "$mainMod, 7, workspace, 7"
-      "$mainMod, 8, workspace, 8"
-      "$mainMod, 9, workspace, 9"
-      "$mainMod, 0, workspace, 10"
+binde = [ 
+"$mainMod+Shift, Right, resizeactive, 30 0"
+"$mainMod+Shift, Left, resizeactive, -30 0"
+"$mainMod+Shift, Up, resizeactive, 0 -30"
+"$mainMod+Shift, Down, resizeactive, 0 30"
+];
 
-      # Moving windows to workspaces
-      "$mainMod SHIFT, 1, movetoworkspacesilent, 1"
-      "$mainMod SHIFT, 2, movetoworkspacesilent, 2"
-      "$mainMod SHIFT, 3, movetoworkspacesilent, 3"
-      "$mainMod SHIFT, 4, movetoworkspacesilent, 4"
-      "$mainMod SHIFT, 5, movetoworkspacesilent, 5"
-      "$mainMod SHIFT, 6, movetoworkspacesilent, 6"
-      "$mainMod SHIFT, 7, movetoworkspacesilent, 7"
-      "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
-      "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
-      "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-
-      # Scratchpad
-      "$mainMod,       S, togglespecialworkspace,  magic"
-      "$mainMod SHIFT, S, movetoworkspace, special:magic"
-    ];
-
-    # Move/resize windows with mainMod + LMB/RMB and dragging
-    bindm = [
-      "$mainMod, mouse:272, movewindow"
-      "$mainMod, mouse:273, resizewindow"
-    ];
-
-    # Laptop multimedia keys for volume and LCD brightness
-    bindel = [
-      ",XF86AudioRaiseVolume,  exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-      ",XF86AudioLowerVolume,  exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-      ",XF86AudioMute,         exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-      ",XF86AudioMicMute,      exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-      "$mainMod, bracketright, exec, brightnessctl s 10%+"
-      "$mainMod, bracketleft,  exec, brightnessctl s 10%-"
-    ];
-
-    # Audio playback
-    bindl = [
-      ", XF86AudioNext,  exec, playerctl next"
-      ", XF86AudioPause, exec, playerctl play-pause"
-      ", XF86AudioPlay,  exec, playerctl play-pause"
-      ", XF86AudioPrev,  exec, playerctl previous"
-    ];
+	
   };
+
 }

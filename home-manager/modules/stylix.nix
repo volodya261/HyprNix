@@ -22,8 +22,8 @@
     targets = {
       kitty.enable = false;
       neovim.enable = false;
-      waybar.enable = true;
-      hyprland.enable = true;
+      waybar.enable = false;
+      hyprland.enable = false;
       hyprlock.enable = false;
     };
 
@@ -65,8 +65,8 @@
     };
 
     image = pkgs.fetchurl {
-      url = "https://codeberg.org/lunik1/nixos-logo-gruvbox-wallpaper/raw/branch/master/png/gruvbox-dark-rainbow.png";
-      sha256 = "036gqhbf6s5ddgvfbgn6iqbzgizssyf7820m5815b2gd748jw8zc";
+      url = "https://w.wallhaven.cc/full/m3/wallhaven-m3x5x9.png";
+      sha256 = "sha256-4vv1ZausNiUYXYUjtZN8K9lt8ZsRTSWt0FsgMfXJ7T4=";
     };
   };
 }

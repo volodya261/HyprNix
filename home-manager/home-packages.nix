@@ -13,6 +13,7 @@
     nekoray
     kitty
     networkmanagerapplet
+    kdePackages.ark
     # CLI utils
     blueman
     yandex-disk
@@ -21,8 +22,8 @@
     htop
     ntfs3g
     unzip
-    fastfetch
     w3m
+    microfetch 
     wget
     wl-clipboard
     zip
@@ -33,8 +34,6 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     waybar
-    hyprlock
-    hyprpaper
     wlogout
     cliphist
     parallel
@@ -46,7 +45,6 @@
     grim
     # Theme
     nwg-look
-    hypridle
     qadwaitadecorations-qt6
     qadwaitadecorations
     # Other

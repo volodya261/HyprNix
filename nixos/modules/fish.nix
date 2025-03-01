@@ -8,7 +8,10 @@ environment.systemPackages = with pkgs; [
   fishPlugins.fzf-fish
   fzf
   grc
+  fishPlugins.pisces
+  fishPlugins.plugin-git
 ];
+
 
  programs.fish = {
 	enable = true;
