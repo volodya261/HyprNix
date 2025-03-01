@@ -24,6 +24,9 @@
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   networking.hostName = "nix-laptop";
   time.timeZone = "Europe/Samara";
+  #programs.fish.enable = true;
+  #users.users.ultra.shell = pkgs.fish;
+
 
   nix.gc = {
 	automatic = true;
@@ -65,7 +68,7 @@
      home-manager
      openconnect
      wget
-   ];
+    ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

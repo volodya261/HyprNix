@@ -10,6 +10,7 @@
     obsidian
     pavucontrol
     telegram-desktop
+    nekoray
     kitty
     networkmanagerapplet
     # CLI utils
@@ -36,7 +37,6 @@
     hyprpaper
     wlogout
     cliphist
-    polkit_gnome
     parallel
     imagemagick
     libnotify

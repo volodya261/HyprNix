@@ -5,6 +5,7 @@
     ./home-packages.nix
   ];
 
+  
 
   home = {
     username = user;
