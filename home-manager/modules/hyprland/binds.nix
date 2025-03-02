@@ -1,28 +1,16 @@
 { pkgs, ...}:
 
-let
-
-  screenshot = pkgs.writeShellScript "screenshot" ''
-   #!/bin/sh
-
-   temp_screenshot="/tmp/screenshot.png"
-   save_file=$(date +'%y%m%d_%Hh%Mm%Ss_screenshot.png')
-
-   grim -g "$(slurp)" - | wl-copy && wl-paste > $temp_screenshot | dunstify "Screenshot of the region taken" -t 1000 && satty -f $temp_screenshot
-
-   rm "$temp_screenshot"
-  '';
-
-in {
+{
 
   wayland.windowManager.hyprland.settings = {
 
-bind = [ 
-"$mainMod, P, exec, ${screenshot}"
+bind = [
+# APPS 
 "Alt, T, exec, telegram-desktop"
 "$mainMod, N, exec, nekoray"
 "Alt, O, exec, obsidian"
 "Alt, S, exec, steam"
+
 "$mainMod, Delete, exit, "
 "$mainMod, W, togglefloating, "
 "$mainMod, G, togglegroup, "
@@ -33,17 +21,21 @@ bind = [
 "$mainMod, E, exec, $file"
 "$mainMod, F, exec, firefox"
 "$mainMod, A, exec, rofi -show drun"
+"$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-paste"
+
 "$mainMod CTRL , H, changegroupactive, b"
 "$mainMod CTRL , L, changegroupactive, f"
 "$mainMod, Left, movefocus, l"
 "$mainMod, Right, movefocus, r"
 "$mainMod, Up, movefocus, u"
 "$mainMod, Down, movefocus, d"
+
 "Alt, Tab, movefocus, d"
 "Alt, H, movefocus, l"
 "Alt, L, movefocus, r"
 "Alt, K, movefocus, u"
 "Alt, J, movefocus, d"
+
 "$mainMod, 1, workspace, 1"
 "$mainMod, KP_End, workspace, 1"
 "$mainMod, 2, workspace, 2"
@@ -62,6 +54,7 @@ bind = [
 "$mainMod, KP_Up, workspace, 8"
 "$mainMod, 9, workspace, 9"
 "$mainMod, 0, workspace, 10"
+
 "$mainMod+Ctrl, Right, workspace, r+1"
 "$mainMod+Ctrl, Left, workspace, r-1"
 "$mainMod+Ctrl, Down, workspace, empty "
@@ -71,6 +64,7 @@ bind = [
 "$mainMod, S, togglespecialworkspace,"
 "$mainMod, J, togglesplit"
 "$mainMod, K, pseudo,"
+
 "$mainMod+Shift, 1, movetoworkspace, 1"
 "$mainMod+Shift, 2, movetoworkspace, 2"
 "$mainMod+Shift, 3, movetoworkspace, 3"

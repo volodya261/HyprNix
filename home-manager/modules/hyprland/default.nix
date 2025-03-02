@@ -6,5 +6,6 @@
     ./hyprpaper.nix
     ./main.nix
     ./rules.nix
+    ./script.nix
   ];
 }

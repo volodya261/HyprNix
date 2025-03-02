@@ -5,7 +5,6 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    mpv
     obs-studio
     obsidian
     pavucontrol
@@ -22,17 +21,17 @@
     htop
     ntfs3g
     unzip
-    w3m
     microfetch 
-    wget
     wl-clipboard
     zip
+    xdotool
 
     # WM stuff
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    hypridle
     waybar
     wlogout
     cliphist

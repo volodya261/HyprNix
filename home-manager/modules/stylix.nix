@@ -17,13 +17,12 @@
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml" ;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/bright.yaml" ;
 
     targets = {
-      kitty.enable = false;
-      neovim.enable = false;
+      kitty.enable = true;
       waybar.enable = false;
-      hyprland.enable = false;
+      hyprland.enable = true;
       hyprlock.enable = false;
     };
 

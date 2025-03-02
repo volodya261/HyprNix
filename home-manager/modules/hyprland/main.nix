@@ -16,14 +16,16 @@
         
 	monitor =  ",1920x1080@60,auto,1";
        "$mainMod" = "SUPER";
-       "$terminal" = "kitty";
+       "$terminal" = "kitty fish";
        "$file" = "thunar";
 
 	exec-once = [
 	 "dbus-update-activation-environment --systemd --all"
 	 "blueman-applet"
 	 "nm-applet"
+         "hypridle"
 	 "dunst"
+	 "waybar"
 	 "wl-paste"
 	 "wl-paste"
 	 "yandex-disk start && yandex-disk sync"
@@ -45,7 +47,7 @@
           border_size = 2;
 
          # "col.active_border" = "rgba(d65d0eff) rgba(98971aff) 45deg";
-          "col.inactive_border" = "rgba(3c3836ff)";
+         # "col.inactive_border" = "rgba(3c3836ff)";
 
           resize_on_border = true;
 
@@ -59,22 +61,35 @@
           active_opacity = 1.0;
           inactive_opacity = 1.0;
 
-          shadow = {
-            enabled = false;
-          };
-
           blur = {
            enabled = true;
-           size = 6;
-           passes = 4;
+           size = 9;
+           passes = 6;
            new_optimizations = true;
            ignore_opacity = true;
-           xray = true;
+           xray = false;
           };
         };
 
 	animations = {
-          enabled = false;
+          enabled = true;
+          bezier = [
+            "wind, 0.05, 0.0, 0.1, 1.05"
+            "winIn, 0.1, 1.1, 0.1, 1.1"
+            "winOut, 0.3, -0.3, 0, 1"
+            "liner, 1, 1, 1, 1"
+          ];
+
+          animation = [
+              "windows, 1, 1, wind, slide"
+              "windowsIn, 0, 0, winIn, slide"
+              "windowsOut, 0, 0, winOut, slide"
+              "windowsMove, 1, 1, wind, slide"
+              "border, 1, 1, liner"
+              "borderangle, 1, 30, liner, loop"
+              "fade, 1, 1, default"
+              "workspaces, 1, 1, wind"
+          ];
         };
 	
 	dwindle = {

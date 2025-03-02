@@ -64,6 +64,7 @@
      vim 
      home-manager
      openconnect
+     jq
      wget
     ];
 
