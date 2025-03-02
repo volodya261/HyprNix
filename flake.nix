@@ -23,6 +23,7 @@
     user = "ultra";
     hosts = [
       { hostname = "nix-laptop"; stateVersion = "24.11"; }
+      { hostname = "nix-pc"; stateVersion = "24.11"; }
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
