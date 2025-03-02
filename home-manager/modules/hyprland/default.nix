@@ -7,5 +7,6 @@
     ./main.nix
     ./rules.nix
     ./script.nix
+#    ./var.nix
   ];
 }

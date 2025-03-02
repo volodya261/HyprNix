@@ -20,7 +20,7 @@ bind = [
 "$mainMod, Return, exec, $terminal"
 "$mainMod, E, exec, $file"
 "$mainMod, F, exec, firefox"
-"$mainMod, A, exec, rofi -show drun"
+"$mainMod, A, exec, rofi -show drun || pkill rofi"
 "$mainMod, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-paste"
 
 "$mainMod CTRL , H, changegroupactive, b"

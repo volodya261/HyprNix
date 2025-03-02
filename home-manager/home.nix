@@ -11,6 +11,7 @@
     username = user;
     homeDirectory = "/home/${user}";
     stateVersion = homeStateVersion;
+    
   };
   
   dconf.settings = {

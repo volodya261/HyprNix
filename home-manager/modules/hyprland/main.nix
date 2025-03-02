@@ -5,16 +5,15 @@
     systemd.enable = true;
     settings = {
 	env = [
+	 "QT_QPA_PLATFORM,xcb"
 	 "NIXOS_OZONE_WL,1"
          "XDG_CURRENT_DESKTOP,Hyprland"
          "XDG_SESSION_TYPE,wayland"
          "XDG_SESSION_DESKTOP,Hyprland"
-         "QT_QPA_PLATFORM,wayland"
 	 "GDK_SCALE,1"
-	 "QT_AUTO_SCREEN_SCALE_FACTOR,1"
 	];
         
-	monitor =  ",1920x1080@60,auto,1";
+	monitor =  ",preferred,auto,1";
        "$mainMod" = "SUPER";
        "$terminal" = "kitty fish";
        "$file" = "thunar";

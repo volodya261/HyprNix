@@ -9,7 +9,6 @@
     ./game.nix
     ./gpu.nix
     ./home-manager.nix
-#    ./fish.nix
     ./flatpak.nix
     ./thunar.nix
   ];
