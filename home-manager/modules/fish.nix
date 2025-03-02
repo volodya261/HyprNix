@@ -44,7 +44,7 @@
       starship init fish | source  # Инициализация starship в fish
     '';
     shellAliases = {
-      "hor" = "home-manager switch --flake ./";
+      "hor" = "home-manager switch --flake ~/nix-my-conf";
       "nor" = "sudo nixos-rebuild switch --flake ./";
     };
   };

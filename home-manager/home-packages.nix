@@ -13,6 +13,13 @@
     kitty
     networkmanagerapplet
     kdePackages.ark
+    lact
+    qbittorrent
+    # WORK Apps
+    onlyoffice-desktopeditors
+    winbox4
+    remmina
+    lens
     # CLI utils
     blueman
     yandex-disk
