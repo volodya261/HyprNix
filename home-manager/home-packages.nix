@@ -12,7 +12,7 @@
     nekoray
     kitty
     networkmanagerapplet
-    kdePackages.ark
+    file-roller
     lact
     qbittorrent
     # WORK Apps
@@ -22,6 +22,7 @@
     lens
     # CLI utils
     blueman
+    fastfetch
     tree
     yandex-disk
     brightnessctl
@@ -29,7 +30,6 @@
     htop
     ntfs3g
     unzip
-    microfetch 
     wl-clipboard
     zip
     xdotool

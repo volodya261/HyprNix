@@ -53,7 +53,7 @@
    };
 
   programs.firefox.enable = true;
-  
+  programs.nano.enable = false;
 # usb automount
   services.udisks2.enable = true;
   nixpkgs.config.allowUnfree = true; 
@@ -67,7 +67,6 @@
      jq
      wget
      lm_sensors
-     fastfetch
     ];
 
   # Some programs need SUID wrappers, can be configured further or are

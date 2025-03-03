@@ -1,17 +1,12 @@
 { pkgs, ... }:
 {
-  # Устанавливаем fish и starship локально через home-manager
   home.packages = with pkgs; [
     fish
     starship
-    fishPlugins.grc
-    fishPlugins.z
-    fishPlugins.fzf-fish
     fzf
     grc
   ];
 
-  # Конфигурация для starship через home-manager
   programs.starship = {
     enable = true;
     settings = {
@@ -36,20 +31,21 @@
     };
   };
 
-  # Конфигурация для fish через home-manager
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
       starship init fish | source  # Инициализация starship в fish
+      bind \ee 'true' # Отключить комбинации
+      bind \ev 'true'
     '';
     shellAliases = {
       "hor" = "home-manager switch --flake ~/nix-my-conf";
+      "v" = "nvim";
       "nor" = "sudo nixos-rebuild switch --flake ./";
     };
   };
 
-  # Устанавливаем fish как оболочку по умолчанию для сессии
   home.sessionVariables.SHELL = "${pkgs.fish}/bin/fish";
 }
 
