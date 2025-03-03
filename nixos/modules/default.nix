@@ -11,6 +11,6 @@
     ./home-manager.nix
     ./flatpak.nix
     ./thunar.nix
-    ./nh.nix
+#    ./nh.nix
   ];
 }

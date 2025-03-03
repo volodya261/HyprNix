@@ -3,19 +3,27 @@
 
   inputs = {
 
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    #nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";    
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-24.11";
+      #url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     stylix = {
-      url = "github:danth/stylix/release-24.11";
+      #url = "github:danth/stylix/release-24.11";
+      url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-
+    # Игровая сборка Nix
+    #jovian = {
+    #  url = "github:Jovian-Experiments/Jovian-NixOS";
+    #  inputs.nixpkgs.follows = "nixpkgs-unstable";	
+    #};
+    
     nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
@@ -25,7 +33,7 @@
     user = "ultra";
     hosts = [
       { hostname = "nix-laptop"; stateVersion = "24.11"; }
-      { hostname = "nix-pc"; stateVersion = "24.11"; }
+      { hostname = "nix-pc"; stateVersion = "unstable"; }
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {

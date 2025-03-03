@@ -11,8 +11,11 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    nerd-fonts.droid-sans-mono
+    nerd-fonts._0xproto
   ];
+
+
 
   stylix = {
     enable = true;
