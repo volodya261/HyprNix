@@ -14,6 +14,7 @@
     networkmanagerapplet
     file-roller
     lact
+    winbox4
     qbittorrent
     # WORK Apps
     onlyoffice-desktopeditors
