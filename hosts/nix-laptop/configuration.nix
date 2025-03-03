@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ../../nixos/modules
+       ../../nixos/modules/nh.nix
       ./hardware-configuration.nix
     ];
 
@@ -22,7 +23,7 @@
   #boot.loader.efi.efiSysMountPoint = "/boot";
   
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
-  networking.hostName = "nix-laptop";
+  networking.hostName = "nix-pc";
   time.timeZone = "Europe/Samara";
 
   nix.gc = {

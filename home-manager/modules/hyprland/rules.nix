@@ -12,12 +12,12 @@ windowrulev2 = [
 "size 675 1000,class:^(TelegramDesktop)$"
 "center,class:^(TelegramDesktop)$"
 
-"opacity 0.90 0.90,class:^(firefox)$"
+"float,title:(File Operation Progress)"
+"center,title:^(File Operation Progress)$"
+
 "opacity 0.80 0.80,class:^(kitty)$"
 "opacity 0.80 0.80,class:^(org.kde.ark)$"
 "opacity 0.80 0.80,class:^(nwg-look)$"
-"opacity 0.80 0.80,class:^(qt5ct)$"
-"opacity 0.80 0.80,class:^(qt6ct)$"
 "opacity 0.80 0.70,class:^(org.pulseaudio.pavucontrol)$"
 "opacity 0.80 0.70,class:^(blueman-manager)$"
 "opacity 0.80 0.70,class:^(nm-applet)$"
@@ -38,10 +38,6 @@ layerrule = [
 "ignorezero,rofi"
 "blur,notifications"
 "ignorezero,notifications"
-"blur,swaync-notification-window"
-"ignorezero,swaync-notification-window"
-"blur,swaync-control-center"
-"ignorezero,swaync-control-center"
 "blur,logout_dialog"
 ];
   };

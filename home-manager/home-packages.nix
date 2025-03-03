@@ -22,6 +22,7 @@
     lens
     # CLI utils
     blueman
+    tree
     yandex-disk
     brightnessctl
     cliphist

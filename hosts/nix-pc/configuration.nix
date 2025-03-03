@@ -66,6 +66,8 @@
      openconnect
      jq
      wget
+     lm_sensors
+     fastfetch
     ];
 
   # Some programs need SUID wrappers, can be configured further or are

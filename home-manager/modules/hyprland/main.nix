@@ -13,20 +13,33 @@
 	 "GDK_SCALE,1"
 	];
         
-	monitor =  ",preferred,auto,1";
+	monitor =  [
+	",preferred,auto,1"
+	"HDMI-A-1,1920x1080@165,auto,1"
+	];
+
+	workspace = [
+	  "1,monitor:HDMI-A-1"
+	  "2,monitor:HDMI-A-1"
+	  "3,monitor:HDMI-A-1"
+	  "4,monitor:HDMI-A-2"
+	  "5,monitor:HDMI-A-2"
+	  "6,monitor:HDMI-A-2"
+	];	
+
        "$mainMod" = "SUPER";
        "$terminal" = "kitty fish";
        "$file" = "thunar";
 
 	exec-once = [
 	 "dbus-update-activation-environment --systemd --all"
-	 "blueman-applet"
-	 "nm-applet"
-         "hypridle"
-	 "dunst"
-	 "waybar"
-	 "wl-paste"
-	 "wl-paste"
+	 "blueman-applet &"
+	 "nm-applet &"
+         "hypridle &"
+	 "dunst &"
+	 "waybar &"
+	 "wl-clip-persist --clipboard both &"
+         "wl-paste --watch cliphist store &"
 	 "yandex-disk start && yandex-disk sync"
 	];
 

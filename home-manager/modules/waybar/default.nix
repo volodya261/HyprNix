@@ -8,7 +8,7 @@
         position = "top";
         height = 24;
         
-        modules-left = ["temperature" "memory"];
+        modules-left = ["custom/cpuinfo" "memory"];
         modules-center = ["hyprland/workspaces"];
         modules-right = ["hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
@@ -18,13 +18,23 @@
           all-outputs = false;
         };
 
-	"temperature" = {
-	  format = "{temperatureC}°C {icon}";
-	  forma-icons = ["" "" ""];
-	};
+    "custom/cpuinfo" = {
+        exec = "./cpuinfo.sh";
+        return-type = "json";
+        format = " {}";
+        rotate = 0;
+        interval = 5; 
+        tooltip = true;
+        max-length = 1000;
+    };
+
+#	"temperature" = {
+#	  format = "{temperatureC}°C {icon}";
+#	  forma-icons = ["" "" ""];
+#	};
 
 	"memory" = {
-	  format = "{}% ";
+	  format = "  {}% ";
 	};
 
         "hyprland/language" = {

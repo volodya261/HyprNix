@@ -7,5 +7,7 @@
     ./rofi
     ./fish.nix
     ./qt.nix
+    ./neovim.nix
+#    ./tmux.nix
   ];
 }

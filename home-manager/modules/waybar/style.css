@@ -12,7 +12,6 @@ window#waybar {
   background: rgba(17, 17, 17, 0.5); /* 0.5 — степень прозрачности (от 0 до 1) */
 }
 
-
 /* Workspace Buttons */
 #workspaces button label{
   color: #ebdbb2;
@@ -25,7 +24,8 @@ window#waybar {
   background: #194E89;
 }
 
-#clock, #battery, #pulseaudio, #tray, #language, #weather {
+
+#cpuinfo #memory #clock, #battery, #pulseaudio, #tray, #language, #weather {
   padding: 0 10px;
   margin: 0 10px;
 }
@@ -33,11 +33,6 @@ window#waybar {
 #language {
   margin: 0;
   color: #d79921;
-}
-
-#custom-weather {
-  margin: 0;
-  color: #98971a;
 }
 
 #pulseaudio {
