@@ -52,7 +52,6 @@
      ];
    };
   
-  boot.extraModulePackages = with pkgs.linuxPackages; [ xpadneo ];  # for XBOX
   programs.firefox.enable = true;
   programs.nano.enable = false;
 # usb automount
