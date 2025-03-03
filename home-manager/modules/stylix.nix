@@ -23,6 +23,7 @@
       kitty.enable = true;
       waybar.enable = false;
       hyprland.enable = true;
+      neovim.enable = false;
       hyprlock.enable = false;
     };
 

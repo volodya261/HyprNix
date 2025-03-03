@@ -27,7 +27,6 @@
 	 '';
 
 	 plugins = with pkgs; [
-      	     tmuxPlugins.gruvbox
     	    ];
 	};
 }

@@ -1,6 +1,7 @@
 { pkgs, ...}:
 {
 
+ programs.file-roller.enable = true;
  programs.thunar.enable = true;
  programs.xfconf.enable = true;
 
