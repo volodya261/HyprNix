@@ -6,7 +6,7 @@
     settings = {
 	env = [
 	 "GDK_BACKEND, wayland"
-	 "QT_QPA_PLATFORM,wayland"
+	 "QT_QPA_PLATFORM,xcb;wayland"
 	 "NIXOS_OZONE_WL,1"
          "XDG_CURRENT_DESKTOP,Hyprland"
          "XDG_SESSION_TYPE,wayland"

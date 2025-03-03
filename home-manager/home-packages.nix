@@ -34,7 +34,7 @@
     xdotool
 
     # WM stuff
-    libsForQt5.xwaylandvideobridge
+    #libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
@@ -51,8 +51,8 @@
     grim
     # Theme
     nwg-look
-    qadwaitadecorations-qt6
-    qadwaitadecorations
+    #qadwaitadecorations-qt6
+    #qadwaitadecorations
     # Other
     nix-prefetch-scripts
     dunst
