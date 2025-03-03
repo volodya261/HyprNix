@@ -14,7 +14,9 @@
       url = "github:danth/stylix/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
 
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let

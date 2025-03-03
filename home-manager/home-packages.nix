@@ -17,7 +17,6 @@
     qbittorrent
     # WORK Apps
     onlyoffice-desktopeditors
-    winbox4
     remmina
     lens
     # CLI utils
