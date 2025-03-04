@@ -37,7 +37,7 @@
 	];	
 
        "$mainMod" = "SUPER";
-       "$terminal" = "kitty fish";
+       "$terminal" = "kitty";
        "$file" = "thunar";
 
 	exec-once = [

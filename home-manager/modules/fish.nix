@@ -38,10 +38,16 @@
       starship init fish | source  # Инициализация starship в fish
       bind \ee 'true' # Отключить комбинации
       bind \ev 'true'
+
+      if status is-login
+        if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
+           Hyprland
+        end
+      end
     '';
     shellAliases = {
       "hor" = "home-manager switch --flake ~/nix-my-conf";
-      "v" = "nvim";
+      "vim" = "nvim";
       "nor" = "sudo nixos-rebuild switch --flake ./";
     };
   };
