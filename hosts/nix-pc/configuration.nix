@@ -28,10 +28,8 @@
 	options = "--delete-order-than 30d";	
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.libinput.enable = true;
-   
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+
+# Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.ultra = {
      isNormalUser = true;
      extraGroups = [ "wheel" "input" "networkmanager" "libvirtd"]; # Enable ‘sudo’ for the user.
@@ -66,6 +64,7 @@ programs.bash = {
      jq
      wget
      lm_sensors
+     polkit_gnome
     ];
 
   system.stateVersion = "24.11"; # Did you read the comment?

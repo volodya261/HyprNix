@@ -52,8 +52,6 @@
     grim
     # Theme
     nwg-look
-    #qadwaitadecorations-qt6
-    #qadwaitadecorations
     # Other
     nix-prefetch-scripts
     dunst

@@ -13,5 +13,6 @@
     ./thunar.nix
     ./nh.nix
     ./var.nix
+    ./polkit.nix
   ];
 }
