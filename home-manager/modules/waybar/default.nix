@@ -8,7 +8,7 @@
         position = "top";
         height = 24;
         
-        modules-left = ["custom/cpuinfo" "memory"];
+        modules-left = ["custom/cpuinfo" "custom/mem"];
         modules-center = ["hyprland/workspaces"];
         modules-right = ["hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
@@ -33,8 +33,11 @@
 #	  forma-icons = ["" "" ""];
 #	};
 
-	"memory" = {
-	  format = "  {}% ";
+	"custom/mem" = {
+         format = "  {} ";
+         interval = 5;
+         exec = "free -h | awk '/Mem:/{printf $3}'";
+         tooltip = false;
 	};
 
         "hyprland/language" = {
