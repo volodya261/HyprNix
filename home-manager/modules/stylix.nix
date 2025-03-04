@@ -23,6 +23,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml" ;
 
     targets = {
+      fish.enable = false;
       kitty.enable = true;
       waybar.enable = false;
       hyprland.enable = true;
