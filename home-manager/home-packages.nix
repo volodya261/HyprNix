@@ -16,7 +16,6 @@
     lact
     winbox4
     qbittorrent
-    yandex-browser
     # WORK Apps
     onlyoffice-desktopeditors
     remmina
