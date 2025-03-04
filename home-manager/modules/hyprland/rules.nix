@@ -8,9 +8,9 @@ windowrulev2 = [
 "size 520 350,title:^(Картинка в картинке)$, class: ()"
 "move 100%-w-20, title:^(Картинка в картинке)$, class: (firefox)"
 "float,class:^(nekoray)$"
-"float,class:^(TelegramDesktop)$"
-"size 675 1000,class:^(TelegramDesktop)$"
-"center,class:^(TelegramDesktop)$"
+"float,class:^(org.telegram.desktop)$"
+"size 675 1000,class:^(org.telegram.desktop)$"
+"center,class:^(org.telegram.desktop)$"
 
 "float,title:(File Operation Progress)"
 "center,title:^(File Operation Progress)$"
