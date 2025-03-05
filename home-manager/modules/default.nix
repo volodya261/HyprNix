@@ -2,9 +2,10 @@
   imports = [
     ./hyprland
     ./waybar
-    ./kitty.nix
-    ./stylix.nix
     ./rofi
+    ./kitty.nix
+    ./ranger.nix
+    ./stylix.nix
     ./fish.nix
     ./qt.nix
     ./neovim.nix
