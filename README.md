@@ -17,7 +17,6 @@ cp HyprNix /mnt/home/user
 `cd ~/HyprNix && home-manager swith --flake ./`
 
 # KEYBINDS
-## manager workspace
 | Key Combination                  | Action                |
 | -------------------------------- | --------------------- |
 | SUPER + [1-9] or SUPER + NUM_1-9 | Change workspace      |
