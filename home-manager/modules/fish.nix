@@ -37,8 +37,8 @@
       set fish_greeting # Disable greeting
       starship init fish | source  # Инициализация starship в fish
       bind \ee 'true' # Отключить комбинации
-      bind \ev 'true'
-
+      bind \ev 'ranger'
+      export VISUAL=nvim
       if status is-login
         if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
            Hyprland
