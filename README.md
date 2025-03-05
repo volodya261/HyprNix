@@ -4,7 +4,8 @@
 
 - git clone https://github.com/volodya261/nix-my-conf.git && cd HyprNix
 
-Разметка диска (перед запуском поменять имя диска)
+
+- Rename the disk name
 ```
 sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ./btrfs-subvolumes.nix
 sudo nixos-generate-config --root /mnt
