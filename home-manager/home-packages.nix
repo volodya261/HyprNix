@@ -21,6 +21,7 @@
     remmina
     lens
     # CLI utils
+    rofi-power-menu
     blueman
     fastfetch
     tree

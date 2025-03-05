@@ -9,7 +9,7 @@
         height = 24;
         
         modules-left = ["custom/cpuinfo" "custom/mem"];
-        modules-center = ["hyprland/workspaces"];
+        modules-center = ["idle_inhibitor" "hyprland/workspaces"];
         modules-right = ["hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -17,6 +17,14 @@
           special-visible-only = true;
           all-outputs = false;
         };
+
+    "idle_inhibitor" = {
+        format = "{icon} ";
+        format-icons = {
+            "activated" = "󰅶 ";
+            "deactivated" = "󰛊 ";
+        };
+     };
 
     "custom/cpuinfo" = {
         exec = "./cpuinfo.sh";
