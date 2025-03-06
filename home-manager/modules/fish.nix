@@ -47,7 +47,7 @@
       end
     '';
     shellAliases = {
-      "hor" = "home-manager switch --flake ~/nix-my-conf";
+      "hor" = "home-manager switch --flake ./";
       "vim" = "nvim";
       "nor" = "sudo nixos-rebuild switch --flake ./";
     };

@@ -12,7 +12,7 @@ sudo nixos-generate-config --root /mnt
 sudo cp /mnt/etc/nixos/hardware-configuration.nix ./hosts/host-name/
 sudo nixos-install --flake ./#nix-pc
 sudo nixos-enter --root /mnt -c 'passwd user'
-cp HyprNix /mnt/home/user
+cp -r HyprNix /mnt/home/user
 ```
 # POST INSTALL
 `cd ~/HyprNix && home-manager swith --flake ./`

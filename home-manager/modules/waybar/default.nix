@@ -27,7 +27,7 @@
      };
 
     "custom/cpuinfo" = {
-        exec = "./cpuinfo.sh";
+        exec = ./cpuinfo.sh;
         return-type = "json";
         format = " {}";
         rotate = 0;
