@@ -17,7 +17,8 @@
   #boot.loader.grub.efiSupport = true;
   #boot.loader.efi.canTouchEfiVariables = true;
   #boot.loader.efi.efiSysMountPoint = "/boot";
- 
+
+# Login manager sddm
  services.displayManager = {
  	sddm.enable = true;
 	sddm.wayland.enable = true;
@@ -39,8 +40,6 @@
      ];
    };
 
-
-
 programs.bash = {
   interactiveShellInit = ''
     if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
@@ -50,7 +49,6 @@ programs.bash = {
     fi
   '';
 };
-
 
   programs.firefox.enable = true;
   programs.nano.enable = false;
@@ -71,6 +69,5 @@ programs.bash = {
     ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
-
 }
 
