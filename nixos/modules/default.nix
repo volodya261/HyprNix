@@ -3,6 +3,7 @@
     ./audio.nix
     ./bluetooth.nix
     ./hyprland.nix
+    ./docker.nix
     ./kernel.nix
     ./nix.nix
     ./virt.nix

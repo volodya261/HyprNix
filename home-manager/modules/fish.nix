@@ -39,6 +39,7 @@
       bind \ee 'true' # Отключить комбинации
       bind \ev 'ranger'
       export VISUAL=nvim
+      export TERMINAL=kitty
       if status is-login
         if test -z "$DISPLAY" -a "$(tty)" = /dev/tty1
            Hyprland

@@ -25,7 +25,7 @@
 # Define a user account. Don't forget to set a password with ‘passwd’.
    users.users.ultra = {
      isNormalUser = true;
-     extraGroups = [ "gamemode" "wheel" "input" "networkmanager" "libvirtd"]; # Enable ‘sudo’ for the user.
+     extraGroups = [ "gamemode" "docker" "wheel" "input" "networkmanager" "libvirtd"]; # Enable ‘sudo’ for the user.
      packages = with pkgs; [
 	vim
 	git

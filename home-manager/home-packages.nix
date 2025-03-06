@@ -5,6 +5,7 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
+    gedit
     obs-studio
     obsidian
     pavucontrol
