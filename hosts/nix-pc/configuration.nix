@@ -17,7 +17,14 @@
   #boot.loader.grub.efiSupport = true;
   #boot.loader.efi.canTouchEfiVariables = true;
   #boot.loader.efi.efiSysMountPoint = "/boot";
-  
+ 
+ services.displayManager = {
+ 	sddm.enable = true;
+	sddm.wayland.enable = true;
+	autoLogin.enable = true;
+	autoLogin.user = "ultra";
+ };
+
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   networking.hostName = "nix-pc";
   time.timeZone = "Europe/Samara";
@@ -31,7 +38,9 @@
 	git
      ];
    };
-  
+
+
+
 programs.bash = {
   interactiveShellInit = ''
     if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
@@ -41,6 +50,7 @@ programs.bash = {
     fi
   '';
 };
+
 
   programs.firefox.enable = true;
   programs.nano.enable = false;
