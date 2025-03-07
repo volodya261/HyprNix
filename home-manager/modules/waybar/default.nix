@@ -8,8 +8,8 @@
         position = "top";
         height = 24;
         
-        modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" ];
-        modules-center = ["custom/play"  "hyprland/workspaces"];
+        modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" "custom/play" ];
+        modules-center = [ "hyprland/workspaces"];
         modules-right = [ "hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -28,13 +28,15 @@
 
     "custom/play" = {
         #exec = "mediaplayer.py --player ";
-        format = "   {}";
-        return-type = "json";
+        format = "   {}";
+					#return-type = "json";
+				exec = "playerctl metadata title";
         on-click = "playerctl play-pause ";
         on-click-right = "playerctl next ";
         on-click-middle = "playerctl previous";
         max-length = 30;
         escape = true;
+				interval = 2;
         tooltip = true;
     };
                  

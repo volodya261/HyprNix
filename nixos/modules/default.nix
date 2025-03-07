@@ -15,5 +15,6 @@
     ./nh.nix
     ./var.nix
     ./polkit.nix
+		./sunshine.nix
   ];
 }
