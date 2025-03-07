@@ -24,7 +24,7 @@
         
 	monitor =  [
 	",preferred,auto,1"
-	"HDMI-A-1,1920x1080@165,auto,1"
+	"HDMI-A-1,1920x1080@165,0x1,1"
 	"HDMI-A-2,1920x1080@75,auto,1"
 	];
 
@@ -85,11 +85,11 @@
 
           blur = {
            enabled = true;
-           size = 9;
-           passes = 6;
+           size = 6;
+           passes = 5;
            new_optimizations = true;
            ignore_opacity = true;
-           xray = false;
+           xray = true;
           };
         };
 

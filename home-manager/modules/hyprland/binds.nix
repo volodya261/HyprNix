@@ -21,6 +21,7 @@ bind = [
 "$mainMod, Return, exec, $terminal"
 "$mainMod, E, exec, $file"
 "$mainMod, F, exec, firefox"
+"$mainMod, Tab, exec, rofi -show window || pkill rofi"
 "$mainMod, A, exec, rofi -show drun || pkill rofi"
 "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy"
 "$mainMod, Backspace, exec, rofi -show p -modi p:'rofi-power-menu --choices=shutdown/reboot'"

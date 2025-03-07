@@ -7,7 +7,10 @@ windowrulev2 = [
 "float,title:^(Картинка в картинке)$"
 "size 520 350,title:^(Картинка в картинке)$, class: ()"
 "move 100%-w-20, title:^(Картинка в картинке)$, class: (firefox)"
+
 "float,class:^(nekoray)$"
+"center,class:^(nekoray)$"
+
 "float,class:^(org.telegram.desktop)$"
 "size 675 1000,class:^(org.telegram.desktop)$"
 "center,class:^(org.telegram.desktop)$"
@@ -36,8 +39,8 @@ windowrulev2 = [
 layerrule = [ 
 "blur,rofi"
 "ignorezero,rofi"
-"blur,notifications"
-"ignorezero,notifications"
+"blur, notifications"
+"ignorezero, notifications"
 "blur,logout_dialog"
 ];
   };
