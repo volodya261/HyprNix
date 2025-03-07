@@ -8,7 +8,8 @@
     ./stylix.nix
     ./fish.nix
     ./qt.nix
-    ./neovim.nix
+#    ./neovim.nix
+     ./nvf.nix
     ./tmux.nix
   ];
 }

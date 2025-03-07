@@ -8,8 +8,8 @@
         position = "top";
         height = 24;
         
-        modules-left = ["custom/cpuinfo" "custom/mem"];
-        modules-center = ["idle_inhibitor" "hyprland/workspaces"];
+        modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" ];
+        modules-center = [ "hyprland/workspaces"];
         modules-right = ["hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -19,7 +19,7 @@
         };
 
     "idle_inhibitor" = {
-        format = "{icon} ";
+        format = "  {icon}";
         format-icons = {
             "activated" = "󰅶 ";
             "deactivated" = "󰛊 ";

@@ -40,6 +40,9 @@
      ];
    };
 
+
+
+
 programs.bash = {
   interactiveShellInit = ''
     if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
@@ -67,6 +70,7 @@ programs.bash = {
      lm_sensors
      polkit_gnome
     ];
+
 
   system.stateVersion = "24.11"; # Did you read the comment?
 }
