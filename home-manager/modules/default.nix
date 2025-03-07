@@ -9,7 +9,7 @@
     ./fish.nix
     ./qt.nix
     ./neovim.nix
-    #./nvf.nix
+    ./nvf.nix
     ./tmux.nix
     ./zathura.nix
   ];

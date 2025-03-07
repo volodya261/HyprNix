@@ -10,6 +10,7 @@ bind = [
 "Alt, T, exec, env QT_QPA_PLATFORM=wayland telegram-desktop"
 "Alt, O, exec, obsidian"
 "Alt, S, exec, steam"
+"Alt, Z, exec, zathura"
 
 "$mainMod, Delete, exit, "
 "$mainMod, W, togglefloating, "
