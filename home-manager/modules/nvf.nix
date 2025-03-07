@@ -50,7 +50,7 @@ programs.nvf = {
 
     theme = {
       enable = true;
-      name = "gruvbox";
+      name = "nord";
       style = "dark";
     };
 
@@ -65,7 +65,12 @@ programs.nvf = {
           navbuddy.enable = true;
         };
       };
-
+    terminal = {
+        toggleterm = {
+          enable = true;
+          lazygit.enable = true;
+        };
+      };
     };
   };
 }

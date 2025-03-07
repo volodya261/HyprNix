@@ -85,11 +85,11 @@
 
           blur = {
            enabled = true;
-           size = 9;
-           passes = 6;
+           size = 6;
+           passes = 5;
            new_optimizations = true;
            ignore_opacity = true;
-           xray = false;
+           xray = true;
           };
         };
 
