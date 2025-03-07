@@ -8,15 +8,17 @@
 imports = [inputs.nvf.homeManagerModules.default];
 programs.nvf = {
     enable = true;
-    # your settings need to go into the settings attribute set
-    # most settings are documented in the appendix
     settings.vim = {
       viAlias = false;
       vimAlias = true;
-      dashboard = {startify.enable = true;};
-
+      options = {
+        tabstop = 2;
+        shiftwidth = 2;
+        softtabstop = 2;
+        expandtab = false;
+      };
       lsp = {
-        formatOnSave = true;
+        formatOnSave = false;
         trouble.enable = true;
         lspSignature.enable = true;
         lsplines.enable = true; 
@@ -36,10 +38,8 @@ programs.nvf = {
     languages = {
       enableLSP = true;
       enableTreesitter = true;
-
       nix.enable = true;
       markdown.enable = true;
-      python.enable = true;
      };
 
     visuals = {
@@ -48,11 +48,15 @@ programs.nvf = {
       fidget-nvim.enable = true;
      };
 
+    theme = {
+      enable = true;
+      name = "gruvbox";
+      style = "dark";
+    };
 
-      ui = {
+    ui = {
         borders.enable = true;
         noice.enable = true;
-        colorizer.enable = true;
         illuminate.enable = true;
         modes-nvim.enable = false;
         fastaction.enable = true;

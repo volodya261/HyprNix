@@ -27,7 +27,7 @@
       kitty.enable = true;
       waybar.enable = false;
       hyprland.enable = false;
-      neovim.enable = false;
+      neovim.enable = true;
       hyprlock.enable = false;
     };
 
