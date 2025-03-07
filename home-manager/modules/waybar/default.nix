@@ -27,7 +27,7 @@
      };
 
     "custom/play" = {
-        exec = ./mediaplayer.py;
+        #exec = "mediaplayer.py --player ";
         format = " {}";
         return-type = "json";
         on-click = "playerctl play-pause ";
