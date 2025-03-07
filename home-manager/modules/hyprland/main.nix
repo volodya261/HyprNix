@@ -24,7 +24,7 @@
         
 	monitor =  [
 	",preferred,auto,1"
-	"HDMI-A-1,1920x1080@165,auto,1"
+	"HDMI-A-1,1920x1080@165,0x1,1"
 	"HDMI-A-2,1920x1080@75,auto,1"
 	];
 
