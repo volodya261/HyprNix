@@ -10,7 +10,7 @@
         
         modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" ];
         modules-center = [ "hyprland/workspaces"];
-        modules-right = ["hyprland/language" "pulseaudio" "battery" "clock" "tray"];
+        modules-right = ["custom/play"  "hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -25,6 +25,19 @@
             "deactivated" = "󰛊 ";
         };
      };
+
+    "custom/play" = {
+        exec = ./mediaplayer.py;
+        format = " {}";
+        return-type = "json";
+        on-click = "playerctl play-pause ";
+        on-click-right = "playerctl next ";
+        on-click-middle = "playerctl previous";
+        max-length = 25;
+        escape = true;
+        tooltip = true;
+    };
+                 
 
     "custom/cpuinfo" = {
         exec = ./cpuinfo.sh;

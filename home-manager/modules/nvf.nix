@@ -24,7 +24,6 @@ programs.nvf = {
 
       statusline.lualine.enable = true;
       telescope.enable = true;
-      autopairs.nvim-autopairs.enable = true;      
       autocomplete.nvim-cmp.enable = true;
       filetree = {nvimTree = {enable = true;};};
       tabline = {nvimBufferline.enable = true;};
@@ -56,12 +55,6 @@ programs.nvf = {
         colorizer.enable = true;
         illuminate.enable = true;
         modes-nvim.enable = false;
-        smartcolumn = {
-          enable = true;
-          setupOpts.custom_colorcolumn = {
-            nix = "110";
-          };
-        };
         fastaction.enable = true;
         breadcrumbs = {
           enable = true;

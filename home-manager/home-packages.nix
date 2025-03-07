@@ -23,6 +23,7 @@
     lens
     # CLI utils
     rofi-power-menu
+    playerctl
     blueman
     fastfetch
     tree
@@ -59,3 +60,5 @@
     dunst
   ];
 }
+
+
