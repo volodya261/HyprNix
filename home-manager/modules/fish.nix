@@ -37,7 +37,7 @@
       set fish_greeting # Disable greeting
       starship init fish | source  # Инициализация starship в fish
       bind \ee 'true' # Отключить комбинации
-      bind \ev 'ranger'
+      bind \er 'ranger'
       export VISUAL=nvim
       export TERMINAL=kitty
       if status is-login

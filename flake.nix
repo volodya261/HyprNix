@@ -18,6 +18,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
+    nvf.url = "github:notashelf/nvf";
+    nvf.inputs.nixpkgs.follows = "nixpkgs";
     # Игровая сборка Nix
     #jovian = {
     #  url = "github:Jovian-Experiments/Jovian-NixOS";
