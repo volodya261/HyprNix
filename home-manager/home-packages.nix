@@ -17,6 +17,7 @@
     lact
     winbox4
     qbittorrent
+		pomodoro-gtk
     # WORK Apps
     onlyoffice-desktopeditors
     remmina

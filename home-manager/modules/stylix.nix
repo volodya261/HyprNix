@@ -26,7 +26,7 @@
       fish.enable = false;
       kitty.enable = true;
       waybar.enable = false;
-      hyprland.enable = false;
+      hyprland.enable = true;
       neovim.enable = true;
       hyprlock.enable = false;
     };
@@ -36,7 +36,6 @@
       size = 24;
       package = pkgs.vanilla-dmz;
     };
-
     fonts = {
       emoji = {
         name = "Noto Color Emoji";
@@ -70,8 +69,8 @@
 
     #image = ../wal.png;
     image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/m3/wallhaven-m3x5x9.png";
-      sha256 = "sha256-4vv1ZausNiUYXYUjtZN8K9lt8ZsRTSWt0FsgMfXJ7T4=";
+      url = "https://w.wallhaven.cc/full/6d/wallhaven-6d8wgq.png";
+      sha256 = "sha256-fDcBLKyWSZZwDa51g9n7rZ5nO0fBA3uqdzGbuYOMD+c=";
     };
   };
 }

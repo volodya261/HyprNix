@@ -15,6 +15,10 @@ windowrulev2 = [
 "size 675 1000,class:^(org.telegram.desktop)$"
 "center,class:^(org.telegram.desktop)$"
 
+"float,title:^(Pomodoro)$"
+"size 400 400,title:^(Pomodoro)$"
+"center,title:^(Pomodoro)$"
+
 "float,title:(File Operation Progress)"
 "center,title:^(File Operation Progress)$"
 

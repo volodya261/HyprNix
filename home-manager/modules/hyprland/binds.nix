@@ -12,6 +12,7 @@ bind = [
 "Alt, S, exec, steam"
 "$mainMod, G, exec, lutris"		
 "Alt, Z, exec, zathura"
+"Alt, P, exec, pomodoro"
 
 "$mainMod, Delete, exit, "
 "$mainMod, W, togglefloating, "
