@@ -26,6 +26,7 @@ bind = [
 "$mainMod, A, exec, rofi -show drun || pkill rofi"
 "$mainMod, V, exec, cliphist list | rofi -dmenu -theme-str 'window {width: 50%;} listview {columns: 1;}' | cliphist decode | wl-copy"
 "$mainMod, Backspace, exec, rofi -show p -modi p:'rofi-power-menu --choices=shutdown/reboot'"
+"Ctrl+Alt, W, exec, killall  .waybar-wrapped || waybar &"
 
 "$mainMod CTRL , H, changegroupactive, b"
 "$mainMod CTRL , L, changegroupactive, f"

@@ -69,6 +69,7 @@ programs.bash = {
      wget
      lm_sensors
      polkit_gnome
+		 killall
     ];
 
 

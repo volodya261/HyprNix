@@ -24,14 +24,14 @@
         
 	monitor =  [
 	",preferred,auto,1"
-	"HDMI-A-1,1920x1080@165,0x1,1"
+	"DP-1,1920x1080@165,0x1,1"
 	"HDMI-A-2,1920x1080@75,auto,1"
 	];
 
 	workspace = [
-	  "1,monitor:HDMI-A-1"
-	  "2,monitor:HDMI-A-1"
-	  "3,monitor:HDMI-A-1"
+	  "1,monitor:DP-1"
+	  "2,monitor:DP-1"
+	  "3,monitor:DP-1"
 	  "4,monitor:HDMI-A-2"
 	  "5,monitor:HDMI-A-2"
 	  "6,monitor:HDMI-A-2"
