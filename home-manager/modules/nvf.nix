@@ -47,13 +47,13 @@ programs.nvf = {
       highlight-undo.enable = true;
       fidget-nvim.enable = true;
      };
-
-    theme = {
-      enable = false;
-      name = "nord";
-      style = "dark";
-    };
-
+						
+#  theme = {
+#    enable = false;
+#    name = "nord";
+#    style = "dark";
+#  };
+#
     ui = {
         borders.enable = true;
         noice.enable = true;
