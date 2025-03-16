@@ -49,7 +49,7 @@ programs.nvf = {
      };
 
     theme = {
-      enable = true;
+      enable = false;
       name = "nord";
       style = "dark";
     };

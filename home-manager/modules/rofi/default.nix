@@ -15,8 +15,8 @@
     grey: #6e738d;
     teal: #8bd5ca;
 
-    width: 600;
-    border-radius: 15px;
+    width: 900;
+    border-radius: 10px;
 }
 	'';
 
@@ -33,7 +33,7 @@
         hide-scrollbar: true;
         display-drun: "   Apps ";
         sidebar-mode: true;
-        border-radius: 10;
+        border-radius: 5;
     }
 
     @theme "theme"
@@ -48,8 +48,8 @@
     grey: #6e738d;
     teal: #8bd5ca;
 
-    width: 600;
-    border-radius: 15px;
+    width: 900;
+    border-radius: 5px;
 }
 
 element-text, element-icon , mode-switcher {
@@ -58,7 +58,7 @@ element-text, element-icon , mode-switcher {
 }
 
 window {
-    height: 360px;
+    height: 760px;
     border: 2px;
     border-color: @teal;
     background-color: @bg-col;
