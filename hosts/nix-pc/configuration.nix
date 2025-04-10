@@ -39,7 +39,7 @@
 	git
      ];
    };
-
+hardware.graphics.enable32Bit = true;
 
 
 
@@ -68,11 +68,13 @@ programs.bash = {
      jq
      wget
      lm_sensors
+		 dig
+		 devenv
      polkit_gnome
 		 killall
     ];
 
-
+  services.openssh.enable = false;
   system.stateVersion = "24.11"; # Did you read the comment?
 }
 

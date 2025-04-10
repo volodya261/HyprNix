@@ -21,12 +21,12 @@ programs.nvf = {
         formatOnSave = false;
         trouble.enable = true;
         lspSignature.enable = true;
-        lsplines.enable = true; 
       };
-
+			
       statusline.lualine.enable = true;
       telescope.enable = true;
       autocomplete.nvim-cmp.enable = true;
+			autopairs.nvim-autopairs.enable = true;
       filetree = {nvimTree = {enable = true;};};
       tabline = {nvimBufferline.enable = true;};
       
@@ -40,6 +40,7 @@ programs.nvf = {
       enableTreesitter = true;
       nix.enable = true;
       markdown.enable = true;
+			python.enable = true;
      };
 
     visuals = {

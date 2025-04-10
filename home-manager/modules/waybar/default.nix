@@ -6,7 +6,7 @@
       mainBar = {
         layer = "bottom";
         position = "top";
-        height = 24;
+        height = 2;
         
         modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" "custom/play" ];
         modules-center = [ "hyprland/workspaces"];
@@ -34,7 +34,6 @@
         on-click = "playerctl play-pause ";
         on-click-right = "playerctl next ";
         on-click-middle = "playerctl previous";
-        max-length = 30;
         escape = true;
 				interval = 2;
         tooltip = true;
@@ -103,7 +102,7 @@
         };
 
         "tray" = {
-          icon-size = 14;
+          icon-size = 12;
           spacing = 1;
         };
       };

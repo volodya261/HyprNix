@@ -28,7 +28,7 @@
     blueman
     fastfetch
     tree
-    yandex-disk
+		yandex-disk
     brightnessctl
     cliphist
     htop

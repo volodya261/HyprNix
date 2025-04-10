@@ -26,7 +26,7 @@
       fish.enable = false;
       kitty.enable = true;
       waybar.enable = false;
-      hyprland.enable = true;
+      hyprland.enable = false;
       neovim.enable = true;
       hyprlock.enable = false;
     };

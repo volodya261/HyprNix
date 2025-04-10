@@ -24,22 +24,27 @@
         
 	monitor =  [
 	",preferred,auto,1"
-	"DP-1,1920x1080@165,0x1,1"
-	"HDMI-A-2,1920x1080@75,auto,1"
+	"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.4, sdrsaturation, 1.28"
+	"HDMI-A-1,1920x1080@165,auto,1"
 	];
 
-	workspace = [
-	  "1,monitor:DP-1"
-	  "2,monitor:DP-1"
-	  "3,monitor:DP-1"
-	  "4,monitor:HDMI-A-2"
-	  "5,monitor:HDMI-A-2"
-	  "6,monitor:HDMI-A-2"
-	];	
+			workspace = [
+			"1,monitor:DP-1"
+			"2,monitor:DP-1"
+			"3,monitor:DP-1"
+			"4,monitor:DP-1"
+			"5,monitor:HDMI-A-1"
+			"6,monitor:HDMI-A-1"
+			"7,monitor:HDMI-A-1"
+			];	
 
        "$mainMod" = "SUPER";
        "$terminal" = "kitty";
        "$file" = "thunar";
+
+	xwayland = {
+				force_zero_scaling = true;
+			};
 
 	exec-once = [
 	 "dbus-update-activation-environment --systemd --all"

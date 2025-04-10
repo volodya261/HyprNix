@@ -2,6 +2,7 @@
 { ... }:
 {
   environment.sessionVariables = {
+		GDK_SCALE = 1;
     DISABLE_QT5_COMPAT = 0;
     GDK_BACKEND = "wayland";
     ANKI_WAYLAND = 1;
