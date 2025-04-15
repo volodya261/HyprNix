@@ -22,8 +22,7 @@ windowrulev2 = [
 "float,title:(File Operation Progress)"
 "center,title:^(File Operation Progress)$"
 
-"opacity 0.80 0.80,class:^(kitty)$"
-"opacity 0.80 0.80,class:^(org.kde.ark)$"
+#"opacity 0.80 0.80,class:^(kitty)$"
 "opacity 0.80 0.80,class:^(nwg-look)$"
 "opacity 0.80 0.70,class:^(org.pulseaudio.pavucontrol)$"
 "opacity 0.80 0.70,class:^(blueman-manager)$"
@@ -38,7 +37,6 @@ windowrulev2 = [
 "float,class:^(nm-applet)$"
 "float,class:^(nm-connection-editor)$"
 ];
-
 
 layerrule = [ 
 "blur,rofi"

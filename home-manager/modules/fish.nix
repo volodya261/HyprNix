@@ -47,6 +47,7 @@
       end
     '';
     shellAliases = {
+			"hdr" = "bash $HOME/HyprNix/home-manager/modules/hyprland/hdr.sh";
       "hor" = "home-manager switch --flake ./";
       "vim" = "nvim";
       "nor" = "sudo nixos-rebuild switch --flake ./";
