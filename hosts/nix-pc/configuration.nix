@@ -53,9 +53,11 @@ programs.bash = {
   '';
 };
 
-  programs.firefox.enable = true;
+  
+	programs.firefox.enable = true;
   programs.nano.enable = false;
 # usb automount
+	services.fstrim.enable = true;
   services.udisks2.enable = true;
   nixpkgs.config.allowUnfree = true; 
 

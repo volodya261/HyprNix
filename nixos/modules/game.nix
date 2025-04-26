@@ -11,6 +11,8 @@
     mangohud
     protonup
     lutris
+		winetricks
+		heroic
   ];
 
   programs.gamemode.enable = true;
