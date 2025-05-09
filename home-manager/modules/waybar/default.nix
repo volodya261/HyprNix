@@ -5,12 +5,12 @@
     settings = {
       mainBar = {
         layer = "bottom";
-					output = "DP-1";
+				#output = "DP-1";
         position = "top";
         height = 2;
         
         modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" "custom/play" ];
-        modules-center = [ "hyprland/workspaces"];
+        modules-center = ["custom/app" "hyprland/workspaces"];
         modules-right = [ "hyprland/language" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -26,6 +26,13 @@
             "deactivated" = "󰛊 ";
         };
      };
+
+
+    "custom/app" = {
+        on-click = "rofi -show drun || pkill rofi";
+        format = "󰾅 ";
+        tooltip = true;
+    };
 
     "custom/play" = {
         #exec = "mediaplayer.py --player ";
@@ -103,7 +110,7 @@
         };
 
         "tray" = {
-          icon-size = 12;
+          icon-size = 16;
           spacing = 1;
         };
       };

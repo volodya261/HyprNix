@@ -74,6 +74,8 @@ programs.bash = {
 		 devenv
      polkit_gnome
 		 killall
+		 gnome-disk-utility
+  	 gparted
     ];
 
   services.openssh.enable = false;
