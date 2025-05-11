@@ -21,7 +21,6 @@
     # WORK Apps
     onlyoffice-desktopeditors
     remmina
-    lens
     # CLI utils
     rofi-power-menu
     playerctl
