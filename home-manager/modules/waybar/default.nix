@@ -78,7 +78,7 @@
         };
 
         "pulseaudio" = {
-          format = "{icon} {volume}%";
+          format = "{icon}  {volume}%";
           format-bluetooth = "{icon} {volume}% ";
           format-muted = "";
           format-icons = {
@@ -104,9 +104,26 @@
           format-icons = ["" "" "" "" ""];
         };
 
-        "clock" = {
-          format = "{:%d.%m.%Y - %H:%M}";
-          format-alt = "{:%A, %B %d at %R}";
+				"clock" = {
+					format = "{:%H:%M}";
+					format-alt = "{:%A %d.%m}";
+					tooltip-format = "<tt><big>{calendar}</big></tt>";
+					calendar = {
+						mode = "month";
+						on-scroll = 1;
+						format = {
+							months = "<span color='#ffead3'><b>{}</b></span>";
+							days = "<span color='#ecc6d9'><b>{}</b></span>";
+							weeks = "<span color='#99ffdd'><b>W{}</b></span>";
+							weekdays = "<span color='#ffcc66'><b>{}</b></span>";
+							today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+						};
+					};
+				actions = {
+					on-click-right = "mode";
+					on-scroll-up = "shift_up";
+					on-scroll-down = "shift_down";
+         };
         };
 
         "tray" = {
