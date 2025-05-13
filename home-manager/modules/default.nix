@@ -12,5 +12,6 @@
     ./nvf.nix
     ./tmux.nix
     ./zathura.nix
+		./talhelper.nix 
   ];
 }

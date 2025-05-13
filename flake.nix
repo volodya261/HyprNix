@@ -20,6 +20,9 @@
     
     nvf.url = "github:notashelf/nvf";
     nvf.inputs.nixpkgs.follows = "nixpkgs";
+
+		talhelper.url = "github:budimanjojo/talhelper";
+
     # Игровая сборка Nix
     #jovian = {
     #  url = "github:Jovian-Experiments/Jovian-NixOS";

@@ -1,6 +1,5 @@
 { pkgs, ... }: {
   nixpkgs.config.allowUnfree = true;
-
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
 
@@ -21,6 +20,8 @@
     # WORK Apps
     onlyoffice-desktopeditors
     remmina
+		k9s
+		talosctl
     # CLI utils
     rofi-power-menu
     playerctl
