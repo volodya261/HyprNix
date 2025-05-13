@@ -19,6 +19,7 @@ bind = [
 "Alt, Return, fullscreen, "
 "$mainMod, L, exec, hyprlock "
 "$mainMod, Q, killactive,"
+", mouse:276, killactive,"
 "$mainMod, Return, exec, $terminal"
 "$mainMod, E, exec, $file"
 "$mainMod, F, exec, firefox"
