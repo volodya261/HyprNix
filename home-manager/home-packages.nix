@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
+	
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     # Packages in each category are sorted alphabetically
@@ -22,6 +23,7 @@
     remmina
 		k9s
 		talosctl
+		inputs.talhelper.packages.x86_64-linux.default
     # CLI utils
     rofi-power-menu
     playerctl
