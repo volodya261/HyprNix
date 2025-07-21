@@ -1,5 +1,5 @@
 { pkgs, inputs, ... }: {
-  imports = [ inputs.stylix.homeManagerModules.stylix ];
+  imports = [ inputs.stylix.homeModules.stylix ];
 
   home.packages = with pkgs; [
     dejavu_fonts
@@ -67,10 +67,10 @@
       light = "Papirus-Light";
     };
 
-    #image = ../wal.png;
-    image = pkgs.fetchurl {
-      url = "https://w.wallhaven.cc/full/6d/wallhaven-6d8wgq.png";
-      sha256 = "sha256-fDcBLKyWSZZwDa51g9n7rZ5nO0fBA3uqdzGbuYOMD+c=";
-    };
+    image = ../truk.jpg;
+		#    image = pkgs.fetchurl {
+		#  url = "https://w.wallhaven.cc/full/6d/wallhaven-6d8wgq.png";
+		#  sha256 = "sha256-fDcBLKyWSZZwDa51g9n7rZ5nO0fBA3uqdzGbuYOMD+c=";
+		# };
   };
 }

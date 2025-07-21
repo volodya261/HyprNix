@@ -19,11 +19,16 @@
     qbittorrent
 		pomodoro-gtk
     # WORK Apps
+		jmeter
     onlyoffice-desktopeditors
     remmina
 		k9s
 		talosctl
+		lens
+		kubernetes-helm
 		inputs.talhelper.packages.x86_64-linux.default
+		kubectl
+		nano
     # CLI utils
     rofi-power-menu
     playerctl
