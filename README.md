@@ -1,5 +1,9 @@
 ❄️ NixOS Config
 
+# ROUDMAP
+
+- [ ] Настроить сохранение только трех поколений
+
 # INSTALL OS
 
 - git clone https://github.com/volodya261/nix-my-conf.git && cd HyprNix
