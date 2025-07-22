@@ -67,7 +67,7 @@
       light = "Papirus-Light";
     };
 
-    image = ../truk.jpg;
+    image = ./truk.jpg;
 		#    image = pkgs.fetchurl {
 		#  url = "https://w.wallhaven.cc/full/6d/wallhaven-6d8wgq.png";
 		#  sha256 = "sha256-fDcBLKyWSZZwDa51g9n7rZ5nO0fBA3uqdzGbuYOMD+c=";
