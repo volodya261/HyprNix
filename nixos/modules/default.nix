@@ -15,6 +15,7 @@
     ./nh.nix
     ./var.nix
     ./polkit.nix
+		./video.nix
 		#		./sunshine.nix # game striming
   ];
 }

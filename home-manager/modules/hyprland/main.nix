@@ -24,8 +24,8 @@
         
 	monitor =  [
 	",preferred,auto,1"
-	"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.35, sdrsaturation, 1.21"
-	#"DP-1,2560x1440@180,auto,1.066667"
+				#"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.35, sdrsaturation, 1.21"
+	"DP-1,2560x1440@180,auto,1.066667"
 	#"HDMI-A-1,1920x1080@165,auto,1"
 	];
 
@@ -100,7 +100,7 @@
         };
 
 	animations = {
-          enabled = false;
+          enabled = true;
           bezier = [
             "wind, 0.05, 0.0, 0.1, 1.05"
             "winIn, 0.1, 1.1, 0.1, 1.1"
