@@ -78,7 +78,7 @@ programs.bash = {
   	 gparted
     ];
 
-  services.openssh.enable = false;
+	#services.openssh.enable = false;
   system.stateVersion = "24.11"; # Did you read the comment?
 }
 
