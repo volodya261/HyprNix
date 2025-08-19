@@ -11,6 +11,5 @@
     ./nvf.nix
     ./tmux.nix
     ./zathura.nix
-		./ssh.nix
   ];
 }
