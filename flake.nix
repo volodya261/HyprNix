@@ -34,10 +34,10 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
-    homeStateVersion = "24.11";
+    homeStateVersion = "25.05";
     user = "ultra";
     hosts = [
-      { hostname = "nix-laptop"; stateVersion = "24.11"; }
+      { hostname = "nix-laptop"; stateVersion = "25.05"; }
       { hostname = "nix-pc"; stateVersion = "unstable"; }
     ];
 

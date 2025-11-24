@@ -10,7 +10,7 @@
     obsidian
     pavucontrol
     telegram-desktop
-    nekoray
+	  throne
     kitty
     networkmanagerapplet
     file-roller

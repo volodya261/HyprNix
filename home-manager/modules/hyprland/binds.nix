@@ -6,7 +6,7 @@
 
 bind = [
 # APPS 
-"$mainMod, N, exec, nekoray"
+"$mainMod, N, exec, Throne"
 "Alt, T, exec, env QT_QPA_PLATFORM=wayland Telegram"
 "Alt, O, exec, obsidian"
 "Alt, S, exec, steam"
