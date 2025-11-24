@@ -26,7 +26,7 @@
 	",preferred,auto,1"
 	"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.25, sdrsaturation, 1.21"
 				#"DP-1,2560x1440@180,auto,1.066667"
-	"HDMI-A-2,1920x1080@74,auto,1, transform, 2"
+	"HDMI-A-2,1920x1080@75,auto,1, transform, 2"
 	];
 
 #			workspace = [
