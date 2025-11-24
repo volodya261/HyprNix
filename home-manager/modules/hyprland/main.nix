@@ -24,9 +24,9 @@
         
 	monitor =  [
 	",preferred,auto,1"
-				#"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.35, sdrsaturation, 1.21"
+	"DP-1,2560x1440@180,auto,1.066667, bitdepth, 10, cm, hdr, sdrbrightness, 1.25, sdrsaturation, 1.21"
 				#"DP-1,2560x1440@180,auto,1.066667"
-	"HDMI-A-1,1920x1080@165,auto,1"
+	"HDMI-A-2,1920x1080@74,auto,1, transform, 2"
 	];
 
 #			workspace = [
@@ -63,10 +63,6 @@
           kb_layout = "us,ru";
           kb_options = "grp:win_space_toggle";
         };
-
-	gestures = {
-	 workspace_swipe = true;
-	};
 
 	general = {
           gaps_in = 1;

@@ -18,6 +18,7 @@
     winbox4
     qbittorrent
 		pomodoro-gtk
+		cabextract
     # WORK Apps
 		jmeter
     onlyoffice-desktopeditors
@@ -60,6 +61,7 @@
     ## scrinshot
     satty
     slurp
+		vlc
     grim
     # Theme
     nwg-look

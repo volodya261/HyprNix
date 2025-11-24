@@ -11,16 +11,16 @@
 
       listener = [
         {
-          timeout = 420;
+          timeout = 620;
           on-timeout = "brightnessctl -s set 30";
           on-resume = "brightnessctl -r";
         }
         {
-          timeout = 450;
+          timeout = 950;
           on-timeout = "loginctl lock-session";
         }
         {
-          timeout = 550;
+          timeout = 990;
           on-timeout = "hyprctl dispatch dpms off";
           on-resume = "hyprctl dispatch dpms on";
         }
