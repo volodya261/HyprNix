@@ -1,8 +1,8 @@
 {
 
   wayland.windowManager.hyprland = {
-    enable = true;
-    systemd.enable = true;
+    enable = true;   
+		systemd.enable = true;
     settings = {
 	#env = [
 	# "GDK_BACKEND, wayland"
@@ -26,7 +26,7 @@
 	",preferred,auto,1"
 	"DP-1,2560x1440@180,auto,1.25, bitdepth, 10, cm, hdr, sdrbrightness, 1.25, sdrsaturation, 1.21"
 				#"DP-1,2560x1440@180,auto,1.066667"
-	"HDMI-A-2,1920x1080@75,auto,1, transform, 1"
+	"HDMI-A-2,1920x1080@75,auto,1, transform, 2"
 	];
 
 #			workspace = [
@@ -51,11 +51,11 @@
 	 "dbus-update-activation-environment --systemd --all"
 	 "blueman-applet &"
 	 "nm-applet &"
-         "hypridle &"
+   "hypridle &"
 	 "dunst &"
 	 "waybar &"
 	 "wl-clip-persist --clipboard both &"
-         "wl-paste --watch cliphist store &"
+   "wl-paste --watch cliphist store &"
 	 "yandex-disk start && yandex-disk sync"
 	];
 
@@ -86,7 +86,7 @@
           inactive_opacity = 1.0;
 
           blur = {
-           enabled = true;
+           enabled = false;
            size = 7;
            passes = 6;
            new_optimizations = true;
@@ -96,7 +96,7 @@
         };
 
 	animations = {
-          enabled = true;
+          enabled = false;
           bezier = [
             "wind, 0.05, 0.0, 0.1, 1.05"
             "winIn, 0.1, 1.1, 0.1, 1.1"

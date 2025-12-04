@@ -7,7 +7,7 @@
         layer = "bottom";
 				#output = "DP-1";
         position = "top";
-        height = 2;
+        height = 1;
         
         modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" "custom/play" ];
         modules-center = ["custom/app" "hyprland/workspaces"];

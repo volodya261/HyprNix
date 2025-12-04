@@ -11,7 +11,7 @@
 	 extraConfig = ''
 	  unbind C-Space
 	  set -g prefix C-Space
-	  bind C-Space send-prefix
+	  bind C-S send-prefix
 
 	  set -g base-index 1
 	  setw -g pane-base-index 1
