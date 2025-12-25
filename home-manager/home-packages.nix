@@ -18,7 +18,7 @@
     qbittorrent
 		pomodoro-gtk
 		cabextract
-		#geekbench
+		geekbench
     # WORK Apps
 		jmeter
     onlyoffice-desktopeditors
