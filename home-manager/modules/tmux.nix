@@ -9,14 +9,14 @@
          keyMode = "vi";
          terminal = "screen-256color";	
 	 extraConfig = ''
-	  unbind C-Space
-	  set -g prefix C-Space
-	  bind C-S send-prefix
+	  unbind C-s
+	  set -g prefix C-s
+	  bind C-s send-prefix
 
 	  set -g base-index 1
 	  setw -g pane-base-index 1
 	  set -g renumber-windows on
-	  set -g default-terminal "xterm"
+	  set -g default-terminal "xterm-256color"
 
 	  bind-key "|" split-window -h -c "#{pane_current_path}"
 	  bind-key "\\" split-window -fh -c "#{pane_current_path}"

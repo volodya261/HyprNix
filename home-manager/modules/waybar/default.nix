@@ -5,9 +5,8 @@
     settings = {
       mainBar = {
         layer = "bottom";
-				#output = "DP-1";
         position = "top";
-        height = 1;
+        height = 20;
         
         modules-left = ["custom/cpuinfo" "custom/mem" "idle_inhibitor" "custom/play" ];
         modules-center = ["custom/app" "hyprland/workspaces"];
@@ -16,7 +15,7 @@
           disable-scroll = true;
           show-special = true;
           special-visible-only = true;
-          all-outputs = false;
+          all-outputs = true;
         };
 
     "idle_inhibitor" = {
@@ -36,9 +35,9 @@
 
     "custom/play" = {
         #exec = "mediaplayer.py --player ";
-        format = "   {}";
+        format = "   {}";
 					#return-type = "json";
-				exec = "playerctl metadata title";
+				exec = "playerctl metadata title | awk '{print $1}'";
         on-click = "playerctl play-pause ";
         on-click-right = "playerctl next ";
         on-click-middle = "playerctl previous";
@@ -64,7 +63,7 @@
 #	};
 
 	"custom/mem" = {
-         format = "  {} ";
+         format = "  {} ";
          interval = 5;
          exec = "free -h | awk '/Mem:/{printf $3}'";
          tooltip = false;

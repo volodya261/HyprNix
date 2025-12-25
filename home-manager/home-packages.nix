@@ -25,9 +25,9 @@
     remmina
 		k9s
 		talosctl
-		lens
+		#lens
 		kubernetes-helm
-		inputs.talhelper.packages.x86_64-linux.default
+		#inputs.talhelper.packages.x86_64-linux.default
 		kubectl
 		nano
     # CLI utils
