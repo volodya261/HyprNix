@@ -10,7 +10,6 @@
     obsidian
     pavucontrol
     telegram-desktop
-	  throne
     kitty
     networkmanagerapplet
     file-roller
@@ -19,6 +18,7 @@
     qbittorrent
 		pomodoro-gtk
 		cabextract
+		#geekbench
     # WORK Apps
 		jmeter
     onlyoffice-desktopeditors
